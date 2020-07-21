@@ -1,7 +1,9 @@
-const list = document.querySelector('ul');
+document.addEventListener('DOMContentLoaded', (event) => {
+    const list = document.querySelector('#list');
 
-list.addEventListener('click', ev => {
-    if (event.target.tagName == "LI") {
-        event.target.style.border = '3px solid rgb(48, 5, 73)';
+    list.addEventListener('click', event => {
+        if (event.target.tagName == "LI") {
+                event.target.style.fontSize = '25px';
     }
+});
 });
